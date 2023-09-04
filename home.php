@@ -159,11 +159,14 @@
           <div class="col">
             <h3>NewsLetter <div class="underline"><span></span></div>
             </h3>
-            <?php include('newsletter.php'); ?>
-            <form>
+            
+            <form action="newsletter.php" method="POST">
+
               <i class="far fa-envelope"></i>
-              <input type="emial" placeholder="Enter your email address" required>
-              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+              <input type="email" name="email" placeholder="Enter your email address" required>
+
+              <button type="submit" name="subscribe"><i class="fas fa-arrow-right"></i></button>
+
 
             </form>
             <div class="social-icons">
@@ -206,6 +209,7 @@
     }
   }
 </script>
+
 
 
 </body>
