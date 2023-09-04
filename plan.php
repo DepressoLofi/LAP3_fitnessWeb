@@ -1,45 +1,9 @@
-<?php
-// Include your configuration file and establish a database connection
-@include 'config.php';
-
-// Check if the form has been submitted
-if (isset($_POST['submit'])) {
-  // Get form data
-  $senderName = mysqli_real_escape_string($conn, $_POST['fullName']);
-  $senderEmail = mysqli_real_escape_string($conn, $_POST['email']);
-  $messageContent = mysqli_real_escape_string($conn, $_POST['message']);
-
-  // Insert the message into the database
-  $insertQuery = "INSERT INTO messages (sender_name, sender_email, message_content) 
-                    VALUES ('$senderName', '$senderEmail', '$messageContent')";
-
-  if (mysqli_query($conn, $insertQuery)) {
-    // Message inserted successfully
-    echo '<script>alert("Message sent successfully.");</script>';
-  } else {
-    // Error occurred while inserting the message
-    echo '<script>alert("Error sending message. Please try again later.");</script>';
-  }
-}
-
-
-// Close the database connection
-mysqli_close($conn);
-?>
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="CSS/contact.css">
-  <title>Contact</title>
+  <link rel="stylesheet" href="CSS/plan.css">
+  <title>Plan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,77 +31,56 @@ mysqli_close($conn);
         <a href="login.html">
           <button class="nav-button">Log in</button>
         </a>
+
       </nav>
 
 
       <div class="description">
-        <h1>Contact Us</h1>
-
+        <h1>Plans</h1>
       </div>
-
     </div>
   </section>
+  <section>
+    <div id="section3">
+      <div class="container">
+        <div class="card">
+          <img src="./images/Gym.jpg" class="card-img">
+          <div class="card-body">
+            <h1 class="card-title">TEXT</h1>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
 
-  <section class="contact">
-    <div class="container">
-      <div class="contactInfo">
-        <div class="box">
-          <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-          <div class="text">
-            <h3>Address</h3>
-            <p>blahblah Road, <br> blahblah,blah,Myanmar</p>
           </div>
+
         </div>
-        <div class="box">
-          <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-          <div class="text">
-            <h3>Phone</h3>
-            <p>+95 1234567</p>
+        <div class="card">
+          <img src="./images/Gym.jpg" class="card-img">
+          <div class="card-body">
+            <h1 class="card-title">TEXT</h1>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+
           </div>
+
         </div>
-        <div class="box">
-          <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-          <div class="text">
-            <h3>Email</h3>
-            <p>blahblah.gmail.com</p>
+        <div class="card">
+          <img src="./images/Gym.jpg" class="card-img">
+          <div class="card-body">
+            <h1 class="card-title">TEXT</h1>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+
           </div>
+
         </div>
 
       </div>
-
-      <div class="contactForm">
-        <div class="box">
-          <form method="post" action="contact.php"> <!-- Add action attribute with the PHP file name -->
-            <h2>Send Message</h2>
-            <div class="inputBox">
-              <input type="text" name="fullName" required="required">
-              <span>Full Name</span>
-            </div>
-            <div class="inputBox">
-              <input type="text" name="email" required="required">
-              <span>Email</span>
-            </div>
-            <div class="inputBox">
-              <textarea name="message" required="required"></textarea>
-              <span>Enter Message</span>
-            </div>
-            <div class="inputBox">
-              <input type="submit" name="submit" value="Send">
-            </div>
-          </form>
-        </div>
-      </div>
-
-
-      </form>
     </div>
-    </div>
+
 
   </section>
 
+
+  </section>
   <div id="section4">
-    <div class="container1">
-
+    <div class="container1 ">
       <div class="row">
         <div class="col">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -166,14 +109,10 @@ mysqli_close($conn);
         <div class="col">
           <h3>NewsLetter <div class="underline"><span></span></div>
           </h3>
-          <?php include('newsletter.php'); ?>
           <div class="form1">
             <i class="far fa-envelope"></i>
             <input type="emial" placeholder="Enter your email address" required>
             <button type="submit"><i class="fas fa-arrow-right"></i></button>
-
-
-
           </div>
           <div class="social-icons">
             <i class="fab fa-facebook-f"></i>
@@ -182,18 +121,16 @@ mysqli_close($conn);
           </div>
         </div>
       </div>
-
       <hr>
       <p class="copyright">PlaceHolder &copy; 2023 - All Rights Reserved</p>
-
-
     </div>
   </div>
   </section>
 
 
 
+
+
 </body>
 
 </html>
-<?php

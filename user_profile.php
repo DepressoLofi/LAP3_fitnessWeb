@@ -29,11 +29,13 @@ mysqli_close($conn);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>User Profile</title>
     <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file -->
 </head>
+
 <body>
     <h1>User Profile</h1>
     <div class="user-details">
@@ -59,4 +61,5 @@ mysqli_close($conn);
         });
     </script>
 </body>
+
 </html>
