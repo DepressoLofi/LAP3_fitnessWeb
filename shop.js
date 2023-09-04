@@ -1,4 +1,4 @@
-Javascript__________
+
 const product = [
     {
     id: 0,
@@ -7,17 +7,13 @@ const product = [
     price: 50,
     },
 
-
     {
         id: 1,
         image: './images/kettlebell.jpg',
         title : 'Kettlebell',
         price: 40,
 
-
     },
-
-
 
 
     {
@@ -26,7 +22,6 @@ const product = [
     title : 'Yoga-mat',
     price: 20,
     },
-
 
     {
         id: 3,
@@ -41,7 +36,6 @@ const product = [
         price: 120,
     },
 
-
     {
     id: 5,
     image: './images/rowingmachine.jpg',
@@ -49,8 +43,6 @@ const product = [
     price: 150,
     }
 ];
-
-
 
 
 const categories = [...new Set(product.map((item)=>
@@ -74,23 +66,17 @@ document.getElementById('root').innerHTML = categories.map((item)=>
 }).join('')
 
 
-
-
 var cart=[];
-
 
 function addtocart(a){
     cart.push({...categories[a]});
     displaycart();
 }
 
-
 function delElement(a){
     cart.splice(a,1);
     displaycart();
 }
-
-
 
 
 function displaycart(a){
@@ -99,7 +85,6 @@ function displaycart(a){
     if(cart.length==0){
         document.getElementById('cartItem').innerHTML="Empty";
         document.getElementById("total").innerHTML="$ " +0+ ".00";
-
 
     }
     else{
@@ -118,8 +103,11 @@ function displaycart(a){
                   "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
             );
         }).join('')
-       
+        
     }
 
-
     }
+
+   
+    
+    
