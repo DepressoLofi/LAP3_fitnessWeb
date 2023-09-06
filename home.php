@@ -15,23 +15,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
 
-  <style>
-    /* CSS for the user profile section */
-    #user-profile {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: #fff;
-      padding: 20px;
-      /* Increased padding for a larger size */
-      border: 2px solid #ccc;
-      /* Increased border width */
-      border-radius: 15px;
-      /* Rounded corners */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      /* Add a shadow effect */
-    }
-  </style>
+
 </head>
 
 <body>
@@ -50,11 +34,7 @@
         <a href="login.php">
           <button class="nav-button">Log in</button>
         </a>
-        <div id="user-profile">
-          <a href="user_profile.php">
-            <img src="profile_image.jpg" alt="Profile Image">
-          </a>
-        </div>
+    
 
 
         <div class="sec-05">
