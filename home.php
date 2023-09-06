@@ -56,6 +56,30 @@
           </a>
         </div>
 
+
+        <div class="sec-05">
+
+      <i class="fa-solid fa-user" onclick="toggleMenu()"></i>
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-Menu">
+
+          <div class="profile-card">
+           <img src="./images/profile.jpg">
+           
+            <div class="username">Hello</div>
+            <div class="email">hello@example.com</div>
+            <a href="username.html" class="profile-button">Change Username</a>
+            <label for="input-file">Update Image</label>
+
+            <input type="file" accept="image/jpeg , image/png, image/jpg" id="input-file">
+            
+            <a href="changepassword.html" class="password-button">Change Password</a>
+            <a href="#" class="logout-button">Log Out</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
       </nav>
 
 
@@ -206,7 +230,13 @@
     }
   }
 </script>
+<script>
+  let subMenu=document.getElementById("subMenu");
 
+  function toggleMenu(){
+    subMenu.classList.toggle("openmenu");
+  }
+</script>
 
 </body>
 
