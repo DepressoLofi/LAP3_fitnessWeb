@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="CSS/createblog.css">
+<title>createblog</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://kit.fontawesome.com/c4254e24a8.js" ></script>
+</head>
+<body>
+    <section class="sec-01">
+      <div class="header">
+        <nav>
+          <h2 class="logo">Dashboard</h2>
+          <ul>
+            <li><a href="adminHome.html">Home</a></li>
+            <li><a href="adminblog.html">Blog</a></li>
+            <li><a href="adminshop.html">Shop</a></li>
+          </ul>
+          <a href="login.html">
+            <button class="nav-button">Log in</button>
+          </a>
+        </nav>
+      </div>
+    </section>
+  
+    <section class="sec-02">
+      <div class="admincontent">
+        <div class="button-group">
+          <a href="creatblog.html" class="btn-large">Create new Post</a>
+          <a href="adminblog.html" class="btn-large">Manage Posts</a>
+        </div>
+        <div class="content">
+          <h2 class="page-title">Create Posts</h2>
+         <form action="#" method="post">
+
+           <div class="sec-03">
+            <div>
+            <label>Title</label>
+            <input type="text" name="title" class="text-input">
+           </div> 
+
+           <div>
+            <label class="label2">Body</label>
+            <div class="sec-04">
+            <textarea name="body" id="body"></textarea>
+          </div>
+           </div> 
+            
+           <div class="sec-05">
+            <label>Image</label>
+            <input type="file"  accept="image/jpeg , image/png, image/jpg" name="image" class="text-input">
+           </div>
+           <div>
+            <label class="topic">Topics</label>
+            <select name="topic" class="text-input">
+              <option value="Fitness">Fitness</option>
+              <option value="Fitness">Health</option>
+              
+            </select>
+           </div>
+          </div>
+          
+          </div>
+         
+         </form>
+        
+        </div>
+      </div>
+      <div>
+        <a href="#" class="btn-large">Add Post</a>
+       </div>
+    </section>
+
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script src="adminblog.js"></script>
+  </body>
+  </html>
