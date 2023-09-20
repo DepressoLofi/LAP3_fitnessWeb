@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: "Montserrat",sans-serif;
+ 
+}
+ 
+body{
+    background: white;
+    height:200vh;
+   
+   
+
+}
+
+.sec-01 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+
+
+
+.logo{
+	color: white;
+	font-size: 28px;
+}
+
+nav ul li{
+	list-style-type:none;
+	display:inline-block;
+	padding:10px 20px;
+
+}
+
+nav ul li a{
+	color:white;
+	text-decoration: none;
+	font-weight:bold;
+	
+}
+
+nav ul li a:hover{
+	color:gray;
+	transition: .3s;;
+}
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 10%;
+	background-color: black;
+	
+  }
+  
+  
+  nav ul {
+	display: flex;
+	align-items: center;
+  }
+  
+  nav ul li {
+	list-style-type: none;
+	margin: 0 15px; 
+  }
+
+  nav ul li a {
+	color:white; 
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px; 
+  }
+  
+  
+  .header .nav-button {
+	border: none;
+	background: white(22, 22, 53);
+	padding: 12px 30px;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 15px;
+	transition: 0.4s;
+	color: black;
+	cursor: pointer;
+  }
+
+
+.header .nav-button:hover{
+	transform: scale(1.3);
+	cursor:pointer;
+}
+
+
+.sec-02{
+    height:100vh;
+    text-align: center;
+
+    padding: 20px 0;
+    background-color: white; 
+}
+
+.btn-large {
+    display: inline-block;
+    margin: 10px; 
+    padding: 10px 20px;
+    margin-top: 60px;
+    background-color: black; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-weight: bold;
+  }
+  
+  .btn-large:hover {
+    background-color: gray; 
+    transition: background-color 0.3s ease-in-out; 
+  }
+
+  .admincontent .page-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+
+
+.sec-03 .text-input{
+  align-items: center;
+  width: 70%;
+  height:50px;
+
+}
+
+.sec-03 label{
+display: flex;
+text-align: left;
+ padding: 20px 20px 20px 230px;
+}
+
+
+
+.sec-04 {
+  width: 86.5%;
+   padding: 20px 20px 10px 230px;
+
+}
+
+.sec-03 .label2
+{
+ margin-bottom: -15px;
+}

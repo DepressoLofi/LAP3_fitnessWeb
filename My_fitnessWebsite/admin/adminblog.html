@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="CSS/adminblog.css">
+<title>adminblog</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://kit.fontawesome.com/c4254e24a8.js" ></script>
+</head>
+<body>
+    <section class="sec-01">
+      <div class="header">
+        <nav>
+          <h2 class="logo">Dashboard</h2>
+          <ul>
+            <li><a href="adminHome.html">Home</a></li>
+            <li><a href="adminblog.html">Blog</a></li>
+            <li><a href="adminshop.html">Shop</a></li>
+          </ul>
+          <a href="login.html">
+            <button class="nav-button">Log in</button>
+          </a>
+        </nav>
+      </div>
+    </section>
+  
+    <section class="sec-02">
+      <div class="admincontent">
+        <div class="button-group">
+          <a href="creatblog.html" class="btn-large">Create new Post</a>
+          <a href="adminblog.html" class="btn-large">Manage Posts</a>
+        </div>
+        <div class="content">
+          <h2 class="page-title">Manage Posts</h2>
+          <table>
+            <thead>
+              <th>No</th>
+              <th>Title</th>
+           
+              <th colspan="3">Actions</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Blah</td>
+             
+                <td><a href="editblog.html" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+                <td><a href="#" class="publish">Publish</a></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Lorem ipsum dolor sit amet</td>
+              
+                <td><a href="#" class="edit">Edit</a></td>
+                <td><a href="#" class="delete">Delete</a></td>
+                <td><a href="#" class="publish">Publish</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html>
