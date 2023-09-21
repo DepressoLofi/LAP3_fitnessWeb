@@ -1,0 +1,97 @@
+@media (min-width: 991px) {
+    .description{
+            font-size: 80px;   
+            line-height: 160px;
+            padding-top: 120px;
+    }
+    .content .text-box {
+            font-size: 1vw;
+            z-index: 222;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 20px;
+            width: 40%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transform: translate(-80px, 50px);
+        }
+    .content .image {
+        z-index: 111;
+            width: 60%;
+        }
+    .sec-02 {
+            margin-top: 300px;
+        }
+    .sub-title {
+    margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .description {
+            padding-top: 90px;
+        }
+        .content .image {
+            width: 100%;
+        }
+        .content .text-box{
+            font-size: 3vw;
+            margin: 0 auto 0;
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 20px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .sec-02 {
+            margin-top: 150px;
+            }
+}
+
+.main-title {
+    font-size: 4vw;
+}
+
+.sub-title {
+    font-size: 4vw;
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content .image img {
+    width: 100%;
+    max-height: 400px;
+}
+
+.aboutImage {
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.icons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.icons a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-body{
+    min-height: 200px;
+}

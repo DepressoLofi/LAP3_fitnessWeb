@@ -41,6 +41,7 @@
   <section class="sec-01">
     <div class="container">
       <h2 class="main-title">PlaceHolder</h2>
+
       <div class="content">
         <div class="image">
           <img src="images\about (2).jpg">
